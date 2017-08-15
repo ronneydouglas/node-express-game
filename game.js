@@ -13,7 +13,7 @@ app.use(expressValidator());
 app.use(express.static('public'));
 
 app.use(session({
-  secret: 'tROi$ e+ D3uX Et 1',
+  secret: 'just peachy',
   resave: false,
   saveUninitialized: true
 }));
@@ -24,9 +24,9 @@ app.set('views', './views');
 app.set ('view engine', 'mustache');
 
 app.get('/', function(req, res) {
-  console.log("Hey!");
+  console.log("You are spending way to much time on this");
 });
 
 app.listen(3000, function() {
-  console.log("Working hard... Listening on 3000");
+  console.log("Uggghhhhhhhh!!!");
 });
